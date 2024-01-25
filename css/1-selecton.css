@@ -1,0 +1,317 @@
+:root{
+
+    --discord--drk-color:rgb(31, 33, 36);
+    --discord--lig-color:rgb(44, 46, 50);
+    --discord--ligest-color:rgb(66,69,73);
+    --discord--blue:rgb(88, 101, 242);
+    --discord--green:rgb(35, 165, 89);
+
+}
+img{
+
+    transition: none;
+
+}
+
+*{
+    
+    
+    user-select: none;
+    font-family: 'Roboto', sans-serif,'Open Sans';
+    padding:0;
+    margin:0;
+    transition: all 0.20s ease-in-out;
+
+
+}
+
+
+.selection-one{
+
+    display:flex;
+    min-height: 100dvh; 
+    width:15em;
+    background-color: var(--discord--lig-color);
+    flex-direction: column;
+    text-align: center;
+
+}
+.selection-one-top{
+
+    border-bottom: 2px solid var(--discord--drk-color);
+    margin-bottom:10px;
+
+}
+
+#search-bar{
+
+    border:none;
+    padding: 7px 0px 7px 7px;
+    width:16em;
+    background-color: var(--discord--drk-color);
+    outline: none;
+    margin-top:8px;
+    border-radius:5px;
+    font-weight:400;
+    margin-bottom:8px;
+    font-family:open'Open Sans';
+    font-weight: 400;
+    
+
+
+}
+#search-bar::placeholder{
+
+    color:rgb(144, 151, 160);
+
+}
+#search-bar::-webkit-search-cancel-button{
+
+    display:none;
+
+}
+
+
+#search-bar:active{
+
+    list-style: none;
+
+}
+#search-bar:hover{
+
+    cursor:pointer;
+
+}
+#selection-hr{
+
+    border:1px solid var(--discord--drk-color);
+
+}
+.selection-one-bottom-elements,
+.selection-one-top-elements{
+
+    transition: none;
+    color:rgb(131, 136, 145);
+    text-align: left;
+    width:auto;
+    align-items: center;
+    padding:8px 8px 8px 8px;
+    margin:0px 5px 0px 5px;
+    border-radius: 4px;
+    transition: none;
+    display:flex;
+
+    
+}
+
+
+.selection-one-top-elements:hover{
+
+    background-color: var(--discord--ligest-color);
+    color:rgb(202, 202, 202);
+    cursor: pointer;
+
+    img{
+
+        
+        filter: brightness(130%);
+
+    }
+    
+
+}
+.selection-one-bottom-elements:hover{
+
+    cursor:pointer;
+    color:rgb(202, 202, 202);
+    background-color: rgb(81, 85, 90);
+    .overlay-images{
+
+        filter: brightness(185%);
+
+    }
+
+
+}
+.selection-one-top-elements:active{
+
+    background-color: rgb(81, 85, 90);
+    color:rgb(255, 255, 255);
+
+    img{
+
+        
+        filter: brightness(200%);
+
+    }
+    
+
+}
+.selection-one-bottom-elements:active{
+
+    background-color: rgb(81, 85, 90);
+    color:rgb(255, 255, 255);
+
+}
+
+.selection-one-icons{
+
+    margin-right:15px;
+    margin-left:8px;
+
+}
+.selection-one-under-icons{
+
+    border-radius:25px;
+    margin-left:5px;
+    margin-right:10px;
+
+}
+
+.direct-messages{
+
+    text-align: left;
+    font-size:0.75rem;
+    color:rgb(131, 136, 145);
+    margin-top:5px;
+    padding:10px 20px 10px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: none;
+    font-family:opensans;
+    font-weight: 400;
+   
+}
+.direct-messages:hover{
+
+    color:rgb(186, 193, 206);
+    cursor: pointer;
+
+}
+
+
+.word{
+
+    transition: none;
+
+}
+.no-animation{
+
+    transition: none;
+    
+}
+
+.image-container {
+
+    position: relative;
+
+  }
+  
+.overlay-image2,
+.overlay-images {
+
+    margin-right:10px;
+    margin-bottom:2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px ; 
+    height: 18px ;
+    border-radius: 10px; 
+
+} 
+
+.overlay-image2{
+
+    width:12px;
+    height:12px;
+    margin-right: 12.8px;
+    margin-bottom: 4.8px;
+    
+}
+.user-info {
+
+    background-color: rgb(35, 37, 41);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width:15em;
+    height:60px;
+
+}
+.user-header-selection{
+
+    display:flex;
+    align-items: center;
+    padding-top:4px;
+
+
+
+}
+.user-pfp{
+
+    width:40px; 
+    border-radius:25px;
+
+
+}
+.user-header-info{
+
+    display:flex; 
+    flex-direction: column; 
+    color:white;
+    font-size:13px;
+    text-align: left;
+    font-weight:400;
+
+}
+.main-user-selection{
+    display: flex;
+    align-items: center;
+    width:115px;
+    border-radius:8px;
+    margin-left:5px;
+    padding:5px 0px;
+    transition: none;
+    margin-right:10px;
+}
+
+.main-user-selection:hover{
+
+        cursor: pointer;
+        background-color: var(--discord--ligest-color);
+
+
+}
+
+.user-chooise{
+
+    width:26px;
+    padding:0px 2px;
+
+
+}
+.chooise-1{
+
+    width:27.3px;
+
+}
+.chooise-2{
+
+    width:28.8px;
+
+}
+
+.user-chooise:hover{
+    
+    cursor:pointer;
+    background-color: var(--discord--ligest-color);
+    border-radius:8px;
+
+}
+img{
+
+    -webkit-user-drag: none;
+
+}

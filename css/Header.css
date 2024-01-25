@@ -1,0 +1,211 @@
+:root{
+
+    --discord--drk-color:rgb(31, 33, 36);
+    --discord--lig-color:rgb(54,57,62);
+    --discord--ligest-color:rgb(66,69,73);
+    --discord--blue:rgb(88, 101, 242);
+    --discord--green:rgb(35, 165, 89);
+
+}
+
+*{
+    
+    
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    transition: all 0.20s ease-in-out;
+
+
+}
+
+body{
+
+    background-color: var(--discord--ligest-color);
+    position: relative;
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+
+}
+
+
+.header{
+
+    display: inline-block;
+    background-color: var(--discord--drk-color);
+    min-height:100dvh;
+    transition: none;
+    
+}
+
+
+.text-icons-text{
+
+    color:white;
+
+}
+
+.header-line{
+
+   border-radius:10px;
+   width:30px;
+   border: 1px solid rgb(66, 70, 76);
+   margin-top:5px;
+   margin-bottom:10px;
+   margin-left:20px;
+
+}
+.header-icons{
+
+    width:50px;
+    border-radius:25px;
+
+
+}
+.discord{
+
+    border-radius:15px;
+
+}
+.text-icons{
+
+    display:flex;
+    width:50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--discord--lig-color);
+    border-radius:25px;
+
+}
+.spec-find-icon{
+
+    display:flex;
+    width:50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--discord--lig-color);
+    border-radius:25px;
+
+}
+
+.spec-icons,
+.sub-animation,
+.sub-left-icons,
+.sub-left-icon,
+.left-icons{
+
+    width:4px; 
+    height: 8px; 
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right:7px;
+
+
+
+}
+.spec-icons{
+
+    background-color:var(--discord--drk-color);
+
+}
+.sub-animation{
+
+    opacity: 0;
+
+}
+
+
+.sub-left-icon{
+
+    margin-top:0px;
+    height: 40px; 
+
+}
+
+
+.selection-box{
+
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+
+
+}
+.discord-selection{
+
+    margin-top:10px;
+    margin-right: 10px;
+
+}
+
+.selection-box:hover{
+    
+    cursor:pointer;
+
+    .left-icons{
+
+        height:20px;
+
+    }
+    
+    .text-icons{
+
+        border-radius:18px;
+        background-color: var(--discord--blue);
+
+    }
+    .sub-animation{
+
+        animation:left-selection-sub-animation 0.30s ease-in-out forwards ;
+
+
+    }
+    .spec-find-icon,
+    .header-icons{
+
+        border-radius: 18px;
+
+        background-color: var(--discord--green) !important; 
+
+        .add-element{
+
+         color:white;
+
+    }
+
+
+    }
+    
+}
+
+.text-icons:active{
+
+    transition: none;
+    transform:translateY(1.3px);
+
+}
+
+.header-icons:active{
+
+    transition: none;
+    transform:translateY(1.3px);
+
+}
+.spec-find-icon:active{
+
+    transition: none;
+    transform:translateY(1.3px);
+
+}
+
+.add-element{
+
+    font-size:2rem; 
+    font-weight: 300;
+    color: rgb(35, 165, 89);
+
+}

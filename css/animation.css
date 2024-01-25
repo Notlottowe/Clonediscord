@@ -1,0 +1,15 @@
+@keyframes left-selection-sub-animation {
+    
+    0%{
+
+        opacity: 0;
+        transform:scale(0)
+
+    }
+    100%{
+
+        opacity: 1;
+        background-color: rgb(255,255,255);
+        transform: scale(1);
+    }
+}
